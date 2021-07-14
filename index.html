@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unit Converter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resource/css/queries.css">
+	</head>
+	<body>
+		<h1>Unit Converter</h1>
+		<div class="clearflix outerbox">
+			<label for="unit-type"><h2>Select Unit Type</h2></label>
+			<br>
+			<select id="unit-type" onchange="UIController.populate()">
+				<option value="weight" selected>Weight</option>
+				<option value="length">Length</option>
+			</select>
+			<br>
+			<div class="box">
+				<label for="unit-1"><h2>Select Unit 1</h2></label>
+				<select id="unit-1">
+					<option value="kilogram" selected>Kilogram(kg)</option>
+					<option value="gram">Gram(g)</option>
+					<option value="decagram">Decagram</option>
+					<option value="decigram">Decigram</option>
+					<option value = "centigram">Centigram</option>
+					<option value = "milligram">Milligram(mg)</option>
+					<option value = "hectogram">Hectogram</option>
+					<option value="microgram">Microgram</option>
+
+				</select>
+				<br>
+				<input type="number" id="unit-1-value" placeholder="Value" step="0.001" required>
+				<br>
+				<div class="unit-relation unit-1-to-2">
+					1 u1 = n u2
+				</div>
+			</div>
+			<div class="box">
+				<label for="u2"><h2>Select Unit 2</h2></label>
+				<select id="unit-2">
+					<option value="gram" selected>Gram(g)</option>
+					<option value="kilogram">Kilogram(kg)</option>
+					<option value="decagram">Decagram</option>
+					<option value="decigram">Decigram</option>
+					<option value = "centigram">Centigram</option>
+					<option value = "milligram">Milligram(mg)</option>
+					<option value = "hectogram">Hectogram</option>
+					<option value="microgram">Microgram</option>
+				</select>
+				<br>
+				<input type="number" id="unit-2-value" placeholder="Converted Value" step="0.001">
+				<br>
+				<span class="unit-relation unit-2-to-1">
+					1 u2 = n u1
+				</span>
+			</div>
+			<!---->
+			<button class="convert">Convert</button><br>
+			<button class="interchange"><strong>
+				<ion-icon name="repeat-sharp"></ion-icon>
+			</strong></button>
+		</div>
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+		<script src="resource/js/app.js"></script>
+	</body>
+</html>

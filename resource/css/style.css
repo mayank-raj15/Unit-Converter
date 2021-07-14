@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(img/background.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 50px;
+    color: #1176a8;
+    font-family: 'lazy dog';
+    background:linear-gradient(270deg,#d1d0d0d8,#dadadacb);
+    /*text-decoration: underline;*/
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #00344e;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.596);
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.clearflix {
+    zoom: 1;
+}
+.clearflix:after,
+.clearflix:before {
+    content: " ";
+    clear: both;
+    display: table;
+    height: 0;
+}
+
+.outerbox {
+    width: 60%;
+    background-color: rgba(0,0,0,0.6);
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    text-align: center;
+    /*box-shadow: 2px 2px 2px black;
+    border-top:2px solid rgba(0, 0, 0);*/
+    
+    border:2px solid rgba(0, 0, 0, 0.555);
+}
+
+.box {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.box * {
+    margin-top: 15px;
+}
+
+.box:last-of-type {
+    border-left: 1px solid rgba(233, 233, 233, 0.712);
+}
+
+.box:last-child {
+    padding-bottom: 15px;
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 17px;
+}
+
+label {
+    padding: 15px 0px 15px 0px;
+}
+
+input {
+    height: 35px;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.convert {
+    margin: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: 100;
+    border-radius: 35px;
+    background-color: #005884;
+    border-color: rgb(90, 90, 90);
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    padding: 2px;
+    color: white;
+}
+
+.convert:active,
+.convert:hover {
+    background-color: #005884;
+    border-color: rgb(63, 63, 63);
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+.interchange {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 308px;
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    background-color: #337799;
+    color: white;
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 50%;
+    padding: 8px 0 0 0;
+}
+
+.interchange:hover,
+.interchange:active{
+    background-color: #4593b9;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+input:focus, button:focus { outline: none; }
+
+.unit-relation {
+    display: inline-block;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: #dcdcdb;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    padding:10px;
+}
+/*
+interchange button color: #a5b1b5
+convert button: 2b3e51
+/*
